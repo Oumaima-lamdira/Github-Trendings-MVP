@@ -1,0 +1,90 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.githubtrendings"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.10.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4c000b224c8cb3df18e03ba4c3565ba8\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+14        android:name="com.example.githubtrendings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.10.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4c000b224c8cb3df18e03ba4c3565ba8\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.10.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4c000b224c8cb3df18e03ba4c3565ba8\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.example.githubtrendings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.10.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4c000b224c8cb3df18e03ba4c3565ba8\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.10.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4c000b224c8cb3df18e03ba4c3565ba8\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:6:5-24:19
+20        android:name="com.example.githubtrendings.GithubApp"
+20-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:7:9-34
+21        android:allowBackup="true"
+21-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.10.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4c000b224c8cb3df18e03ba4c3565ba8\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:icon="@android:mipmap/sym_def_app_icon"
+25-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:9:9-56
+26        android:label="@string/app_name"
+26-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:11:9-41
+27        android:roundIcon="@android:mipmap/sym_def_app_icon"
+27-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:10:9-61
+28        android:supportsRtl="true"
+28-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:12:9-35
+29        android:testOnly="true"
+30        android:theme="@style/Theme.GithubTrendingsMVP" >
+30-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:13:9-56
+31        <activity
+31-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:15:9-22:20
+32            android:name="com.example.githubtrendings.view.MainActivity"
+32-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:16:13-46
+33            android:exported="true" >
+33-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:17:13-36
+34            <intent-filter>
+34-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:18:13-21:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:19:17-69
+35-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:19:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:20:17-77
+37-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:20:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <provider
+41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+42            android:name="androidx.startup.InitializationProvider"
+42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+43            android:authorities="com.example.githubtrendings.androidx-startup"
+43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+44            android:exported="false" >
+44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+45            <meta-data
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+46                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+47                android:value="androidx.startup" />
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+48            <meta-data
+48-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+49                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+49-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+50                android:value="androidx.startup" />
+50-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+51        </provider>
+52    </application>
+53
+54</manifest>

@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+drawable bg_language
+drawable ic_github_placeholder
+id ivAvatar
+id progressBar
+id progressBarBottom
+id recyclerView
+id swipeRefresh
+id toolbar
+id tvDescription
+id tvEmpty
+id tvError
+id tvForks
+id tvLanguage
+id tvOwner
+id tvRepoName
+id tvStars
+layout activity_main
+layout item_repo
+string app_name
+style Theme.GithubTrendingsMVP
