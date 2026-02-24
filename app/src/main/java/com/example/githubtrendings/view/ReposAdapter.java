@@ -13,14 +13,20 @@ import com.example.githubtrendings.model.Repo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
-/**
- * VIEW dans MVP
- * Adaptateur RecyclerView pour afficher la liste des repos
- */
 public class ReposAdapter extends RecyclerView.Adapter<ReposAdapter.RepoViewHolder> {
 
+    public interface OnRepoClickListener {
+        void onRepoClick(Repo repo);
+    }
+
+    private final OnRepoClickListener listener;
     private final List<Repo> repos = new ArrayList<>();
+
+    public ReposAdapter(OnRepoClickListener listener) {
+        this.listener = listener;
+    }
 
     public void setRepos(List<Repo> newRepos) {
         repos.clear();
@@ -33,7 +39,7 @@ public class ReposAdapter extends RecyclerView.Adapter<ReposAdapter.RepoViewHold
     public RepoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         ItemRepoBinding binding = ItemRepoBinding.inflate(
                 LayoutInflater.from(parent.getContext()), parent, false);
-        return new RepoViewHolder(binding);
+        return new RepoViewHolder(binding, listener); // ← passe listener ici
     }
 
     @Override
@@ -44,12 +50,15 @@ public class ReposAdapter extends RecyclerView.Adapter<ReposAdapter.RepoViewHold
     @Override
     public int getItemCount() { return repos.size(); }
 
+    // ← RepoViewHolder reçoit le listener en paramètre
     static class RepoViewHolder extends RecyclerView.ViewHolder {
         private final ItemRepoBinding binding;
+        private final OnRepoClickListener listener;
 
-        RepoViewHolder(ItemRepoBinding binding) {
+        RepoViewHolder(ItemRepoBinding binding, OnRepoClickListener listener) {
             super(binding.getRoot());
             this.binding = binding;
+            this.listener = listener;
         }
 
         void bind(Repo repo) {
@@ -58,10 +67,9 @@ public class ReposAdapter extends RecyclerView.Adapter<ReposAdapter.RepoViewHold
             binding.tvDescription.setText(
                     repo.getDescription() != null && !repo.getDescription().isEmpty()
                             ? repo.getDescription() : "Aucune description");
-            binding.tvStars.setText(formatCount(repo.getStars()) + " ★");
-            binding.tvForks.setText(formatCount(repo.getForks()) + " 🍴");
-            binding.tvLanguage.setText(
-                    repo.getLanguage() != null ? repo.getLanguage() : "N/A");
+            binding.tvStars.setText(String.format(Locale.getDefault(), "%s ★", formatCount(repo.getStars())));
+            binding.tvForks.setText(String.format(Locale.getDefault(), "%s 🍴", formatCount(repo.getForks())));
+            binding.tvLanguage.setText(repo.getLanguage() != null ? repo.getLanguage() : "N/A");
 
             if (repo.getOwner() != null) {
                 Glide.with(binding.getRoot().getContext())
@@ -70,11 +78,13 @@ public class ReposAdapter extends RecyclerView.Adapter<ReposAdapter.RepoViewHold
                         .circleCrop()
                         .into(binding.ivAvatar);
             }
+
+            binding.getRoot().setOnClickListener(v -> listener.onRepoClick(repo));
         }
 
         private String formatCount(int count) {
             if (count >= 1000) {
-                return String.format("%.1fk", count / 1000.0);
+                return String.format(Locale.getDefault(), "%.1fk", count / 1000.0);
             }
             return String.valueOf(count);
         }

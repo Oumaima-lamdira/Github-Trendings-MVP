@@ -2926,6 +2926,7 @@ int drawable ic_clear_black_24 0x7f07008e
 int drawable ic_clock_black_24dp 0x7f07008f
 int drawable ic_github_placeholder 0x7f070090
 int drawable ic_keyboard_black_24dp 0x7f070091
+int drawable ic_launcher_background 0x7f0700e4
 int drawable ic_m3_chip_check 0x7f070092
 int drawable ic_m3_chip_checked_circle 0x7f070093
 int drawable ic_m3_chip_close 0x7f070094
@@ -3129,6 +3130,7 @@ int id clip_vertical 0x7f080075
 int id clockwise 0x7f080076
 int id closest 0x7f080077
 int id collapseActionView 0x7f080078
+int id collapsingToolbar 0x7f0801fe
 int id compress 0x7f080079
 int id confirm_button 0x7f08007a
 int id constraint 0x7f08007b
@@ -3491,10 +3493,12 @@ int id tvDescription 0x7f0801df
 int id tvEmpty 0x7f0801e0
 int id tvError 0x7f0801e1
 int id tvForks 0x7f0801e2
+int id tvFullName 0x7f0801ff
 int id tvLanguage 0x7f0801e3
 int id tvOwner 0x7f0801e4
 int id tvRepoName 0x7f0801e5
 int id tvStars 0x7f0801e6
+int id tvUrl 0x7f080200
 int id unchecked 0x7f0801e7
 int id uniform 0x7f0801e8
 int id unlabeled 0x7f0801e9
@@ -3631,6 +3635,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_detail 0x7f0b006b
 int layout activity_main 0x7f0b001c
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
@@ -3710,6 +3715,9 @@ int layout select_dialog_item_material 0x7f0b0067
 int layout select_dialog_multichoice_material 0x7f0b0068
 int layout select_dialog_singlechoice_material 0x7f0b0069
 int layout support_simple_spinner_dropdown_item 0x7f0b006a
+int mipmap ic_launcher 0x7f110000
+int mipmap ic_launcher_foreground 0x7f110001
+int mipmap ic_launcher_round 0x7f110002
 int plurals mtrl_badge_content_description 0x7f0d0000
 int string abc_action_bar_home_description 0x7f0e0000
 int string abc_action_bar_up_description 0x7f0e0001

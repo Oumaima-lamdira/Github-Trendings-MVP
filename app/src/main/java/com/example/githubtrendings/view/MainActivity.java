@@ -16,7 +16,7 @@ import com.example.githubtrendings.presenter.ReposContract;
 import com.example.githubtrendings.presenter.ReposPresenter;
 
 import java.util.List;
-
+import android.content.Intent;
 /**
  * VIEW dans MVP
  * - Implemente ReposContract.View
@@ -52,7 +52,21 @@ public class MainActivity extends AppCompatActivity implements ReposContract.Vie
     }
 
     private void setupRecyclerView() {
-        adapter = new ReposAdapter();
+        adapter = new ReposAdapter(repo -> {
+            Intent intent = new Intent(this, DetailActivity.class);
+            intent.putExtra(DetailActivity.EXTRA_REPO_NAME,     repo.getName());
+            intent.putExtra(DetailActivity.EXTRA_REPO_FULLNAME, repo.getFullName());
+            intent.putExtra(DetailActivity.EXTRA_REPO_DESC,     repo.getDescription());
+            intent.putExtra(DetailActivity.EXTRA_REPO_STARS,    repo.getStars());
+            intent.putExtra(DetailActivity.EXTRA_REPO_FORKS,    repo.getForks());
+            intent.putExtra(DetailActivity.EXTRA_REPO_LANGUAGE, repo.getLanguage());
+            intent.putExtra(DetailActivity.EXTRA_REPO_URL,      repo.getHtmlUrl());
+            if (repo.getOwner() != null) {
+                intent.putExtra(DetailActivity.EXTRA_REPO_OWNER,  repo.getOwner().getLogin());
+                intent.putExtra(DetailActivity.EXTRA_REPO_AVATAR, repo.getOwner().getAvatarUrl());
+            }
+            startActivity(intent);
+        });
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         binding.recyclerView.setLayoutManager(layoutManager);
         binding.recyclerView.setAdapter(adapter);

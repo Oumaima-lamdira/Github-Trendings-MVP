@@ -85,6 +85,7 @@ VIEW
 ## 🧩 Concepts Clés
 
 ### Contract MVP
+
 ```java
 public interface ReposContract {
 
@@ -108,6 +109,7 @@ public interface ReposContract {
 ```
 
 ### Date dynamique — 30 derniers jours
+
 ```java
 static String buildQuery() {
     Calendar calendar = Calendar.getInstance();
@@ -118,6 +120,7 @@ static String buildQuery() {
 ```
 
 ### Éviter les Memory Leaks
+
 ```java
 @Override
 public void onDestroy() {
@@ -142,13 +145,14 @@ public void onDestroy() {
 ## 🚀 Installation
 
 1. Clone le projet
+
 ```bash
 git clone https://github.com/Oumaima-lamdira/GithubTrendingsMVP.git
 ```
 
-2. Ouvre dans Android Studio
+1. Ouvre dans Android Studio
 
-3. **Sync Now** → **Run ▶️**
+2. **Sync Now** → **Run ▶️**
 
 > Aucune configuration de clé API nécessaire !
 
@@ -156,9 +160,10 @@ git clone https://github.com/Oumaima-lamdira/GithubTrendingsMVP.git
 
 ## 📸 Screenshots
 
-| Liste des repos |
-|---|
-| ![Liste](screenshots/image.png) |
+| Icon de l'app |Liste des repos | Détails d'un repo|
+|---|---|---|
+| ![Icon](screenshots/image1.png) |![Liste](screenshots/image.png)|![Détails](screenshots/image2.png)|
+
 ---
 
 ## 👩‍💻 Auteur
