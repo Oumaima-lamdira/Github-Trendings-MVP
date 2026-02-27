@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="app_languages">
+        <item>Français</item>
+        <item>English</item>
+    </string-array>
     <string name="app_name">GitHub Trending MVP</string>
-    <style name="Theme.GithubTrendingsMVP" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#FFFFFF</item>
-        <item name="colorPrimaryVariant">#F6F8FA</item>
-        <item name="colorOnPrimary">#24292F</item>
+    <string name="settings_about">À PROPOS</string>
+    <string name="settings_appearance">APPARENCE</string>
+    <string name="settings_dark_mode">Mode sombre</string>
+    <string name="settings_dark_mode_desc">Thème noir ou blanc</string>
+    <string name="settings_developer">Développeur</string>
+    <string name="settings_developer_name">Oumaima Lamdira</string>
+    <string name="settings_language">Langue</string>
+    <string name="settings_language_desc">Français / Anglais</string>
+    <string name="settings_notif_desc">Nouveaux repos tendance</string>
+    <string name="settings_notif_enable">Activer les notifications</string>
+    <string name="settings_notifications">NOTIFICATIONS</string>
+    <string name="settings_source">Source des données</string>
+    <string name="settings_source_name">GitHub Search API</string>
+    <string name="settings_title">Réglages</string>
+    <string name="settings_version">Version de l\'application</string>
+    <style name="Theme.GithubTrendingsMVP" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0969DA</item>
+        <item name="colorPrimaryVariant">#0550AE</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#24292F</item>
+        <item name="colorOnSurfaceVariant">#57606A</item>
+        <item name="android:colorBackground">#F6F8FA</item>
         <item name="android:windowBackground">#F6F8FA</item>
         <item name="android:statusBarColor">#FFFFFF</item>
     </style>

@@ -9,7 +9,7 @@ import com.example.githubtrendings.di.RepositoryModule;
 
 /**
  * Classe Application
- * Initialise Dagger 2 au demarrage
+ * - Initialise Dagger 2 au démarrage
  */
 public class GithubApp extends Application {
 
@@ -18,6 +18,8 @@ public class GithubApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        // ── Dagger 2 ──────────────────────────────────────────────────────────
         appComponent = DaggerAppComponent.builder()
                 .networkModule(new NetworkModule())
                 .repositoryModule(new RepositoryModule())

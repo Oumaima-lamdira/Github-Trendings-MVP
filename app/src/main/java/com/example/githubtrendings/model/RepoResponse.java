@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * MODEL dans MVP
  * Represente la reponse de l'API GitHub Search
+ * L'API GitHub Search retourne une enveloppe autour des repos
  */
 public class RepoResponse {
 

@@ -26,7 +26,7 @@
 17-->[androidx.core:core:1.10.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4c000b224c8cb3df18e03ba4c3565ba8\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:6:5-27:19
+19-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:6:5-29:19
 20        android:name="com.example.githubtrendings.GithubApp"
 20-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:7:9-34
 21        android:allowBackup="true"
@@ -69,28 +69,34 @@
 41-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:24:13-48
 42            android:parentActivityName="com.example.githubtrendings.view.MainActivity" />
 42-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:25:13-60
-43
-44        <provider
-44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-45            android:name="androidx.startup.InitializationProvider"
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-46            android:authorities="com.example.githubtrendings.androidx-startup"
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-47            android:exported="false" >
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-48            <meta-data
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-50                android:value="androidx.startup" />
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+43        <activity
+43-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:26:9-28:63
+44            android:name="com.example.githubtrendings.view.SettingsActivity"
+44-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:27:13-50
+45            android:parentActivityName="com.example.githubtrendings.view.MainActivity" />
+45-->D:\GithubTrendingsMVP\app\src\main\AndroidManifest.xml:28:13-60
+46
+47        <provider
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+48            android:name="androidx.startup.InitializationProvider"
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+49            android:authorities="com.example.githubtrendings.androidx-startup"
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+50            android:exported="false" >
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
 51            <meta-data
-51-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
 53                android:value="androidx.startup" />
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-54        </provider>
-55    </application>
-56
-57</manifest>
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Oumaima\.gradle\caches\transforms-3\7feff3453ea74a1a55f1824535b77b11\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Oumaima\.gradle\caches\transforms-3\4ecf3fa1e1ed8ee3fcdc1a7a077e2bcb\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+57        </provider>
+58    </application>
+59
+60</manifest>

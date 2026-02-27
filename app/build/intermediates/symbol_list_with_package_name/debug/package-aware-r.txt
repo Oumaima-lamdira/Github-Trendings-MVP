@@ -75,6 +75,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array app_languages
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3077,6 +3078,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -3421,6 +3423,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerLanguage
 id spline
 id split_action_bar
 id spread
@@ -3443,6 +3446,8 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id swipeRefresh
+id switchDarkMode
+id switchNotifications
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3500,6 +3505,7 @@ id tvOwner
 id tvRepoName
 id tvStars
 id tvUrl
+id tvVersion
 id unchecked
 id uniform
 id unlabeled
@@ -3638,6 +3644,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_detail
 layout activity_main
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3716,6 +3723,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
@@ -3883,6 +3891,21 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string settings_about
+string settings_appearance
+string settings_dark_mode
+string settings_dark_mode_desc
+string settings_developer
+string settings_developer_name
+string settings_language
+string settings_language_desc
+string settings_notif_desc
+string settings_notif_enable
+string settings_notifications
+string settings_source
+string settings_source_name
+string settings_title
+string settings_version
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow

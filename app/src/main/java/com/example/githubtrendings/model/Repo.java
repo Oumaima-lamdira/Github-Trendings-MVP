@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * MODEL dans MVP
+ * C'est la traduction Java du JSON GitHub.
  * Represente un repository GitHub retourne par l'API
  */
 public class Repo {

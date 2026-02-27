@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.githubtrendings.GithubApp;
+import com.example.githubtrendings.R;
 import com.example.githubtrendings.databinding.ActivityMainBinding;
 import com.example.githubtrendings.model.Repo;
 import com.example.githubtrendings.model.RepoRepository;
@@ -17,6 +18,8 @@ import com.example.githubtrendings.presenter.ReposPresenter;
 
 import java.util.List;
 import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuItem;
 /**
  * VIEW dans MVP
  * - Implemente ReposContract.View
@@ -46,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements ReposContract.Vie
 
     private void initPresenter() {
         RepoRepository repository = ((GithubApp) getApplication())
-                .getAppComponent().getRepoRepository();
+                .getAppComponent().getRepoRepository();/**obtient via Dagger*/
         presenter = new ReposPresenter(repository);
         presenter.attachView(this);
     }
@@ -89,7 +92,20 @@ public class MainActivity extends AppCompatActivity implements ReposContract.Vie
         );
         binding.swipeRefresh.setOnRefreshListener(() -> presenter.refresh());
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_settings) {
+            startActivity(new Intent(this, SettingsActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
     // ─── Implementation de ReposContract.View ────────────────────
 
     @Override

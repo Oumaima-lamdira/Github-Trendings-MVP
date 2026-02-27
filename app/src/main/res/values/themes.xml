@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.GithubTrendingsMVP" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#FFFFFF</item>
-        <item name="colorPrimaryVariant">#F6F8FA</item>
-        <item name="colorOnPrimary">#24292F</item>
+    <style name="Theme.GithubTrendingsMVP" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0969DA</item>
+        <item name="colorPrimaryVariant">#0550AE</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#24292F</item>
+        <item name="colorOnSurfaceVariant">#57606A</item>
+        <item name="android:colorBackground">#F6F8FA</item>
         <item name="android:windowBackground">#F6F8FA</item>
         <item name="android:statusBarColor">#FFFFFF</item>
     </style>

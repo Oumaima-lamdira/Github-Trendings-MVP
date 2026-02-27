@@ -8,8 +8,20 @@
         "source": "C:\\Users\\Oumaima\\.gradle\\daemon\\8.5\\com.example.githubtrendings.app-main-33:\\layout\\activity_detail.xml"
     },
     {
+        "merged": "com.example.githubtrendings.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.example.githubtrendings.app-main-33:/layout/activity_main.xml"
+    },
+    {
         "merged": "com.example.githubtrendings.app-mergeDebugResources-30:/layout/item_repo.xml",
         "source": "com.example.githubtrendings.app-main-33:/layout/item_repo.xml"
+    },
+    {
+        "merged": "com.example.githubtrendings.app-mergeDebugResources-30:/layout/activity_settings.xml",
+        "source": "com.example.githubtrendings.app-main-33:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Oumaima\\.gradle\\daemon\\8.5\\com.example.githubtrendings.app-mergeDebugResources-30:\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\Oumaima\\.gradle\\daemon\\8.5\\com.example.githubtrendings.app-main-33:\\layout\\activity_settings.xml"
     },
     {
         "merged": "C:\\Users\\Oumaima\\.gradle\\daemon\\8.5\\com.example.githubtrendings.app-mergeDebugResources-30:\\layout\\activity_main.xml",

@@ -33,7 +33,8 @@ public class ReposPresenter implements ReposContract.Presenter {
     public ReposPresenter(RepoRepository repository) {
         this.repository = repository;
     }
-
+/**`attachView` / `onDestroy`** → cycle de vie du Presenter lié à l'Activity :
+ Activity.onCreate()  → presenter.attachView(this)  → view = this*/
     public void attachView(ReposContract.View view) {
         this.view = view;
     }
@@ -60,7 +61,7 @@ public class ReposPresenter implements ReposContract.Presenter {
         if (view != null) view.showLoading();
         fetchRepos(1);
     }
-
+/**Activity.onDestroy() → presenter.onDestroy()       → view = null*/
     @Override
     public void onDestroy() {
         view = null; // Evite les memory leaks
@@ -77,7 +78,7 @@ public class ReposPresenter implements ReposContract.Presenter {
             @Override
             public void onResponse(Call<RepoResponse> call, Response<RepoResponse> response) {
                 isLoading = false;
-                if (view == null) return;
+                if (view == null) return;/**guard clause. Si l'Activity est détruite pendant un appel réseau, on ne fait rien pour éviter un crash.*/
                 view.hideLoading();
                 view.hideLoadingMore();
 
@@ -90,7 +91,7 @@ public class ReposPresenter implements ReposContract.Presenter {
                     if (allRepos.isEmpty()) {
                         view.showEmptyState();
                     } else {
-                        view.showRepos(new ArrayList<>(allRepos));
+                        view.showRepos(new ArrayList<>(allRepos));/**→ on passe une copie à la View pour éviter les modifications concurrentes.*/
                     }
                 } else {
                     view.showError("Erreur serveur : " + response.code());

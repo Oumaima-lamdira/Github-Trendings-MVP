@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide;
 import com.example.githubtrendings.R;
 import com.example.githubtrendings.databinding.ActivityDetailBinding;
 import com.example.githubtrendings.model.Repo;
-
+/**L'écran de détail d'un repo. Il reçoit les données via Intent.putExtra() depuis MainActivity.*/
 public class DetailActivity extends AppCompatActivity {
 
     public static final String EXTRA_REPO_NAME     = "extra_repo_name";
@@ -38,7 +38,7 @@ public class DetailActivity extends AppCompatActivity {
 
         loadData();
     }
-
+/**Récupère les données passées par MainActivity*/
     private void loadData() {
         String name     = getIntent().getStringExtra(EXTRA_REPO_NAME);
         String fullName = getIntent().getStringExtra(EXTRA_REPO_FULLNAME);
@@ -49,7 +49,7 @@ public class DetailActivity extends AppCompatActivity {
         String avatar   = getIntent().getStringExtra(EXTRA_REPO_AVATAR);
         String owner    = getIntent().getStringExtra(EXTRA_REPO_OWNER);
         String url      = getIntent().getStringExtra(EXTRA_REPO_URL);
-
+/**Affiche les données*/
         binding.collapsingToolbar.setTitle(name);
         binding.tvFullName.setText(fullName);
         binding.tvOwner.setText("👤 " + (owner != null ? owner : ""));

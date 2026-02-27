@@ -10,7 +10,7 @@ import dagger.Provides;
 
 /**
  * MODULE DAGGER 2
- * Fournit le Repository
+ * Fournit le Repository en lui injectant l'API
  */
 @Module
 public class RepositoryModule {

@@ -40,6 +40,9 @@
         <activity
             android:name="com.example.githubtrendings.view.DetailActivity"
             android:parentActivityName="com.example.githubtrendings.view.MainActivity" />
+        <activity
+            android:name="com.example.githubtrendings.view.SettingsActivity"
+            android:parentActivityName="com.example.githubtrendings.view.MainActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

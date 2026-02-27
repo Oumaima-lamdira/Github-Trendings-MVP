@@ -13,9 +13,10 @@ import retrofit2.http.Query;
  * MODEL dans MVP
  * Interface Retrofit pour l'API GitHub Search
  * Utilise des Callbacks (pas de Coroutines - architecture Legacy)
+ * C'est le menu de l'API — il définit les requêtes HTTP disponibles.
  */
-public interface GithubApi {
-
+public interface  GithubApi {
+    /** @GET("search/repositories")`** → fait une requête GET vers `https://api.github.com/search/repositories`*/
     @GET("search/repositories")
     Call<RepoResponse> searchRepositories(
             @Query("q") String query,

@@ -14,10 +14,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * MODULE DAGGER 2
  * Fournit les dependances reseau
+ * Il fabrique tous les objets réseau dans l'ordre correct
  */
 @Module
 public class NetworkModule {
-
+    /**
+     OkHttpClient : le client HTTP qui fait les vraies requêtes réseau + logs
+     */
     @Provides
     @Singleton
     public OkHttpClient provideOkHttpClient() {
@@ -27,7 +30,9 @@ public class NetworkModule {
                 .addInterceptor(logging)
                 .build();
     }
-
+    /**
+     Retrofit : prend l'OkHttpClient et sait convertir JSON en Java grâce à Gson
+     */
     @Provides
     @Singleton
     public Retrofit provideRetrofit(OkHttpClient client) {
@@ -37,7 +42,9 @@ public class NetworkModule {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
-
+    /**
+     GithubApi : l'interface Retrofit devient un objet utilisable
+     */
     @Provides
     @Singleton
     public GithubApi provideGithubApi(Retrofit retrofit) {

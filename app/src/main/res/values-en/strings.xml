@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GitHub Trending MVP</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_appearance">APPEARANCE</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_dark_mode_desc">Dark or light theme</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_desc">French / English</string>
+    <string name="settings_notifications">NOTIFICATIONS</string>
+    <string name="settings_notif_enable">Enable notifications</string>
+    <string name="settings_notif_desc">New trending repos</string>
+    <string name="settings_about">ABOUT</string>
+    <string name="settings_version">App version</string>
+    <string name="settings_developer">Developer</string>
+    <string name="settings_developer_name">Oumaima Lamdira</string>
+    <string name="settings_source">Data source</string>
+    <string name="settings_source_name">GitHub Search API</string>
+</resources>

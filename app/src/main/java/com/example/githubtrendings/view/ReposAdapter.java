@@ -14,7 +14,7 @@ import com.example.githubtrendings.model.Repo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-
+/**Le pont entre la liste de `Repo` et le `RecyclerView`*/
 public class ReposAdapter extends RecyclerView.Adapter<ReposAdapter.RepoViewHolder> {
 
     public interface OnRepoClickListener {

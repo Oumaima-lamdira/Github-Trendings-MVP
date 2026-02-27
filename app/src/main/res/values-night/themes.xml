@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- À placer dans res/values-night/themes.xml -->
+    <style name="Theme.GithubTrendingsMVP" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#58A6FF</item>
+        <item name="colorPrimaryVariant">#1F6FEB</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSurface">#161B22</item>
+        <item name="colorOnSurface">#E6EDF3</item>
+        <item name="colorOnSurfaceVariant">#8B949E</item>
+        <item name="android:colorBackground">#0D1117</item>
+        <item name="android:windowBackground">#0D1117</item>
+        <item name="android:statusBarColor">#161B22</item>
+    </style>
+</resources>
