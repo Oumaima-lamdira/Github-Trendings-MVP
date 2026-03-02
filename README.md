@@ -160,9 +160,9 @@ git clone https://github.com/Oumaima-lamdira/GithubTrendingsMVP.git
 
 ## 📸 Screenshots
 
-| Icon de l'app |Liste des repos | Détails d'un repo|
-|---|---|---|
-| ![Icon](screenshots/image1.png) |![Liste](screenshots/image.png)|![Détails](screenshots/image2.png)|
+| Icon de l'app |Liste des repos | Détails d'un repo|Settings|
+|---|---|---|---|
+| ![Icon](screenshots/image1.png) |![Liste](screenshots/image.png)|![Détails](screenshots/image2.png)|![Settings](screenshots/image3.png)|
 
 ---
 
